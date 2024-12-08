@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <title>Pets Information Form</title>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="styles.css"/> 
+  </head>
+  <body>
+    <h1 id="title">Pets Information Form</h1>
+    <p id="description">Please full out this form with the information of your pets</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name-label" id="name-label">What is your name?: <input id="name-label" type="text" name="name-label" placeholder="Please write your name" required></label>
+        <label for="email" id="email-label">What is your email?: <input id="email" type="email" name="email" placeholder="Please write your email" required></label>
+      </fieldset>
+      <fieldset>
+        <label for="name">What is your pet's name?: <input id="name" type="text" name="pet" placeholder="Please write your pet's name"required></label>
+        <label for="number" id="number-label">What is its age?: <input id="number" type="number" min="0" max="30" name="age" placeholder="Please write the age your pets" required></label>
+        <label for="number-label">How many pets do you have?: <input id="number-label" type="number" min="0" max="100" name="number-pets" placeholder="Please write the number of pets that you have" required></label>
+        <label for="breed">What is its breed?: <input id="breed" type="text" name="breed" placeholder="Please write the breed of your pet"required></label>      
+        <legend>Pet's information (Required)</legend>
+        <label for="female"><input type="radio" name="gender" value="female" checked id="female" class="inline"/> Female</label>
+        <label for="male"><input type="radio" name="gender" id="male" class="inline" value="male"> Male</label>      
+        <label for="dropdown">What kind of animal is your pet?
+          <select name="kind" id="dropdown" required>
+            <option value="">(Select one)</option>
+            <option value="1">Cat</option>
+            <option value="2">Dog</option>
+            <option value="3">Rabbit</option>
+            <option value="4">Fish</option>
+            <option value="5">Mouse</option>
+          </select>
+        </label>
+        <label for="important-things">Tell us some important things about your pet:
+          <textarea id="important-things" rows="5" cols="50" placeholder="My pet is friendly with other animals..." name="observations" required></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>What topic would you like to receive information on?</p>
+        <label><input type="checkbox" name="information" value="care" class="inline">Pet care</label>
+        <label><input type="checkbox" name="information" value="food" class="inline">Healthy food</label>
+        <label><input type="checkbox" name="information" value="accessories" class="inline">Accessories</label>
+        <label><input type="checkbox" name="information" value="daycare" class="inline">Daycare</label>
+        <label><input type="checkbox" name="information" value="trends" class="inline">Trends</label>        
+      </fieldset>
+      <input type="submit" value="Submit" id="submit"/>
+    </form>
+  </body>
+</html>
